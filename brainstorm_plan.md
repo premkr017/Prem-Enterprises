@@ -1,33 +1,43 @@
-# Plan: Add KCTC College & LinkedIn Links to Both services.html & contact.html
+# Plan: Add NGM Degree College & PMS Scholarship Portal Links
 
 ## Information Gathered
-- User wants **Khemchand Tarachand College, Raxaul (https://kctccollege.in/)** added in both places
-- User wants **LinkedIn (https://www.linkedin.com/in/ritik-kumar-prem-kumar-542814286/)** added in both places
-- "EK SERVICES KE ANDAR AUR EK LINKEDIN H DONO KO DONO JAGAH ADD KAR DO" = One (KCTC) inside Services & one LinkedIn - Add both in both places
+
+The user wants to **ADD** two new links:
+
+### 1. NGM Degree College, Bhelahi, East Champaran
+- **URL:** https://ngmdegreecollege.ac.in/
+- **Type:** College website link
+- Should be added alongside the existing KCTC College link in the **Admission (नामांकन)** section
+
+### 2. Post Matric Scholarship BC-EBC Portal 2026-27
+- **URL:** https://pmsonline.bihar.gov.in/pms/pms_online/Default.aspx
+- **Type:** Scholarship portal link
+- Should be added in the **Scholarship (छात्रवृत्ति)** section(s)
 
 ## Current Status
-### services.html:
-- ✅ KCTC link already present in Admission section
-- ✅ LinkedIn already in footer with correct URL
 
-### contact.html:
-- ✅ LinkedIn already in contact-social section with correct URL
-- ✅ LinkedIn already in footer with correct URL
-- ❌ KCTC college link NOT present anywhere
+### services.html:
+- **Admission Section (SECTION 4):** Has KCTC College link → Add NGM Degree College nearby
+- **Scholarship Section (SECTION 6):** Has "PMS Online Bihar Post Matric Scholarship 2026-27" text but WITHOUT the actual clickable link → Add proper link
+- **Scholarships Section (SECTION 12):** Has "Post Matric Scholarship New" text but WITHOUT links → Add link here too
+
+### index.html:
+- **Features list:** Lists "Scholarship" and "Admission" as features (no direct links needed)
+- **No detailed Admission/Scholarship link sections** (these are in services.html)
 
 ## Plan
 
-### 1. Add KCTC College link to contact.html
-Add the following as a new contact-detail entry under the existing contact info:
-```
-<i class="fas fa-graduation-cap"></i>
-<span>Khemchand Tarachand College, Raxaul — <a href="https://kctccollege.in/" target="_blank">kctccollege.in</a> <span class="status-tag new">New</span></span>
-```
+### services.html edits:
 
-Also add a KCTC link in the contact section description area as a quick link.
+**Edit 1: Admission Section (SECTION 4)**
+- Add NGM Degree College link right after the KCTC College link
 
-### 2. Files to edit:
-- **contact.html**: Add KCTC college link
+**Edit 2: Scholarship Section (SECTION 6)**
+- Convert "PMS Online Bihar Post Matric Scholarship 2026-27" text into a proper clickable link pointing to `https://pmsonline.bihar.gov.in/pms/pms_online/Default.aspx`
 
-### 3. Follow-up steps:
-- Verify both links work correctly in browser
+**Edit 3: Scholarship Links Section (SECTION 12)**
+- Add the PMS Online portal link as a clickable link
+
+## Follow-up Steps
+- Verify all links work correctly in browser
+
