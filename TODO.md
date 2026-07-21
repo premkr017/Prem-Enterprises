@@ -15,3 +15,25 @@
 ## ✅ Step 3: Add UG Admission 4th Merit List notice
 - [x] services.html (Admission section)
 
+## ✅ Step 4: Add Search functionality across all pages
+- [x] Add search icon button to all navbars ✅
+  - [x] index.html (already had it)
+  - [x] about.html (already had it)
+  - [x] services.html (already had it)
+  - [x] contact.html (already had it)
+  - [x] admit-card.html ✅ (added search icon)
+  - [x] results.html ✅ (added search icon)
+  - [x] syllabus.html ✅ (added search icon)
+  - [x] jobs.html ✅ (added search icon)
+- [x] Add search overlay HTML to all pages ✅
+  - [x] index.html ✅
+  - [x] about.html ✅
+  - [x] contact.html ✅
+  - [x] services.html ✅
+  - [x] admit-card.html ✅
+  - [x] results.html ✅
+  - [x] syllabus.html ✅
+  - [x] jobs.html ✅
+- [x] CSS (style.css) ✅ (already has search overlay styles)
+- [x] JS (script.js) ✅ (already has search engine logic)
+

@@ -1377,6 +1377,171 @@ footer {
     transform: translateY(-5px);
 }
 
+/* ===== SEARCH OVERLAY ===== */
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 14, 26, 0.97);
+    backdrop-filter: blur(20px);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+.search-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+.search-overlay .search-close {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    font-size: 2.5rem;
+    color: #f0c040;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(240, 192, 64, 0.05);
+    border: 1px solid rgba(240, 192, 64, 0.1);
+}
+.search-overlay .search-close:hover {
+    background: rgba(240, 192, 64, 0.15);
+    transform: rotate(90deg);
+}
+.search-overlay .search-input-wrap {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.search-overlay .search-input-wrap i {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #f0c040;
+}
+.search-overlay .search-input-wrap input {
+    width: 100%;
+    padding: 20px 25px 20px 65px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(240, 192, 64, 0.15);
+    border-radius: 60px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+.search-overlay .search-input-wrap input:focus {
+    border-color: #f0c040;
+    box-shadow: 0 0 40px rgba(240, 192, 64, 0.1);
+}
+.search-overlay .search-input-wrap input::placeholder {
+    color: #445577;
+}
+.search-overlay .search-results {
+    width: 100%;
+    max-width: 700px;
+    max-height: 60vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.search-overlay .search-results::-webkit-scrollbar {
+    width: 6px;
+}
+.search-overlay .search-results::-webkit-scrollbar-thumb {
+    background: #f0c040;
+    border-radius: 10px;
+}
+.search-overlay .search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 20px;
+    background: rgba(240, 192, 64, 0.03);
+    border: 1px solid rgba(240, 192, 64, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    animation: fadeInUp 0.3s ease forwards;
+}
+.search-overlay .search-result-item:hover {
+    background: rgba(240, 192, 64, 0.08);
+    border-color: rgba(240, 192, 64, 0.2);
+    transform: translateX(5px);
+}
+.search-overlay .search-result-item i {
+    font-size: 1.3rem;
+    color: #f0c040;
+    width: 40px;
+    height: 40px;
+    background: rgba(240, 192, 64, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.search-overlay .search-result-item .result-text h4 {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.search-overlay .search-result-item .result-text p {
+    color: #6678a0;
+    font-size: 0.75rem;
+}
+.search-overlay .no-results {
+    text-align: center;
+    color: #445577;
+    font-size: 1.1rem;
+    padding: 40px;
+}
+.search-overlay .no-results i {
+    font-size: 3rem;
+    color: rgba(240, 192, 64, 0.1);
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Search Icon in Header */
+.search-icon-btn {
+    background: rgba(240, 192, 64, 0.05);
+    border: 1px solid rgba(240, 192, 64, 0.1);
+    color: #b0c4e0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.search-icon-btn:hover {
+    background: rgba(240, 192, 64, 0.12);
+    color: #f0c040;
+    transform: scale(1.05);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
     .footer-grid {
