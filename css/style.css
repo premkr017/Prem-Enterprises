@@ -1002,6 +1002,28 @@ header {
     font-style: italic;
 }
 
+/* ===== SERVICE LINK ===== */
+.service-link {
+    color: #8899bb;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+.service-link:hover {
+    color: #f0c040;
+}
+.service-link .sub-desc {
+    display: block;
+    font-size: 0.72rem;
+    color: #556688;
+    margin-top: 1px;
+    font-style: italic;
+    transition: 0.3s;
+}
+.service-link:hover .sub-desc {
+    color: #8899bb;
+}
+
 /* ===== WINDOWS/LINUX SECTION ===== */
 .tech-section {
     padding: 80px 0;
