@@ -456,6 +456,258 @@
             border: 1px solid rgba(240, 192, 64, 0.05);
         }
 
+        /* ===== STATE STRIP (Fastjob Searchers) ===== */
+        .state-strip {
+            background: linear-gradient(135deg, #0f1628, #141c30);
+            padding: 20px 0;
+            border-bottom: 2px solid rgba(240, 192, 64, 0.1);
+        }
+        .state-strip .strip-title {
+            text-align: center;
+            color: #f0c040;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        .state-strip .strip-title i {
+            margin: 0 8px;
+        }
+        .state-strip .state-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+        .state-strip .state-tag {
+            background: rgba(240, 192, 64, 0.06);
+            border: 1px solid rgba(240, 192, 64, 0.08);
+            padding: 4px 16px;
+            border-radius: 20px;
+            color: #8899bb;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: 0.3s;
+            cursor: default;
+        }
+        .state-strip .state-tag:hover {
+            background: rgba(240, 192, 64, 0.12);
+            color: #f0c040;
+            transform: translateY(-2px);
+        }
+
+        /* ===== TELEGRAM/WHATSAPP BANNER ===== */
+        .social-banner {
+            background: linear-gradient(135deg, #1a1f2e, #0f1628);
+            padding: 30px 0;
+            border-top: 1px solid rgba(240, 192, 64, 0.08);
+            border-bottom: 1px solid rgba(240, 192, 64, 0.08);
+        }
+        .social-banner .banner-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .social-banner .banner-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(240, 192, 64, 0.05);
+            padding: 12px 28px;
+            border-radius: 50px;
+            border: 1px solid rgba(240, 192, 64, 0.1);
+            text-decoration: none;
+            transition: 0.3s;
+            color: #e0e6f0;
+            font-weight: 600;
+        }
+        .social-banner .banner-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        .social-banner .banner-item.telegram { border-color: rgba(0, 136, 204, 0.3); }
+        .social-banner .banner-item.telegram:hover { background: rgba(0, 136, 204, 0.15); }
+        .social-banner .banner-item.whatsapp { border-color: rgba(37, 211, 102, 0.3); }
+        .social-banner .banner-item.whatsapp:hover { background: rgba(37, 211, 102, 0.15); }
+        .social-banner .banner-item.app { border-color: rgba(240, 192, 64, 0.3); }
+        .social-banner .banner-item.app:hover { background: rgba(240, 192, 64, 0.15); }
+        .social-banner .banner-item i {
+            font-size: 1.6rem;
+        }
+        .social-banner .banner-item.telegram i { color: #0088cc; }
+        .social-banner .banner-item.whatsapp i { color: #25D366; }
+        .social-banner .banner-item.app i { color: #f0c040; }
+        .social-banner .banner-item small {
+            display: block;
+            font-size: 0.65rem;
+            color: #6678a0;
+            font-weight: 400;
+        }
+
+        /* ===== COMING SOON / RELEASED TAG ===== */
+        .status-tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-left: 6px;
+        }
+        .status-tag.coming-soon {
+            background: rgba(255, 165, 0, 0.1);
+            color: #ffa500;
+            border: 1px solid rgba(255, 165, 0, 0.2);
+        }
+        .status-tag.released {
+            background: rgba(0, 255, 136, 0.1);
+            color: #00ff88;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        .status-tag.new {
+            background: rgba(240, 192, 64, 0.1);
+            color: #f0c040;
+            border: 1px solid rgba(240, 192, 64, 0.2);
+        }
+        .status-tag.soon {
+            background: rgba(0, 150, 255, 0.1);
+            color: #0096ff;
+            border: 1px solid rgba(0, 150, 255, 0.2);
+        }
+
+        /* ===== FASTJOB HEADER META ===== */
+        .fj-meta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+        .fj-meta .fj-badge {
+            background: linear-gradient(135deg, #f0c040, #d4a020);
+            color: #0a0e1a;
+            padding: 5px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+        .fj-meta .fj-tagline {
+            color: #8899bb;
+            font-size: 0.9rem;
+        }
+        .fj-meta .fj-tagline i {
+            color: #f0c040;
+            margin-right: 5px;
+        }
+
+        /* ===== VIEW ALL LINK ===== */
+        .view-all-wrap {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .view-all-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            border: 1px solid rgba(240, 192, 64, 0.2);
+            color: #f0c040;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .view-all-link:hover {
+            background: rgba(240, 192, 64, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* ===== BLOG CARD ===== */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .blog-card {
+            background: linear-gradient(145deg, #141c30, #0f1628);
+            padding: 25px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(240, 192, 64, 0.05);
+            transition: 0.3s;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(240, 192, 64, 0.15);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        .blog-card h4 {
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .blog-card p {
+            color: #6678a0;
+            font-size: 0.8rem;
+        }
+        .blog-card .blog-tag {
+            display: inline-block;
+            background: rgba(240, 192, 64, 0.06);
+            color: #f0c040;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            margin-top: 8px;
+        }
+        .blog-card .blog-tag i {
+            margin-right: 4px;
+        }
+
+        /* ===== ABOUT FASTJOB SECTION ===== */
+        .about-fj {
+            background: #0a0e1a;
+        }
+        .about-fj-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(145deg, #141c30, #0f1628);
+            padding: 40px 35px;
+            border-radius: 25px;
+            border: 1px solid rgba(240, 192, 64, 0.05);
+        }
+        .about-fj-content h3 {
+            color: #f0c040;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about-fj-content p {
+            color: #8899bb;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        .about-fj-content .fj-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin: 20px 0;
+        }
+        .about-fj-content .fj-features li {
+            list-style: none;
+            color: #8899bb;
+            font-size: 0.9rem;
+            padding: 8px 15px;
+            background: rgba(240, 192, 64, 0.03);
+            border-radius: 10px;
+            border: 1px solid rgba(240, 192, 64, 0.05);
+        }
+        .about-fj-content .fj-features li i {
+            color: #f0c040;
+            margin-right: 8px;
+        }
+
         /* ===== STATS ===== */
         .stats-bar {
             background: #0f1628;
@@ -1208,14 +1460,16 @@
             </div>
             <nav class="nav-links" id="navLinks">
                 <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#main-services">Main Services</a>
-                <a href="#govt-services">Govt Services</a>
-                <a href="#latest-updates">Latest</a>
-                <a href="#results">Results</a>
-                <a href="#important-links">Links</a>
-                <a href="#tech">Tech</a>
-                <a href="#about">About</a>
+                <a href="#current-job">Jobs</a>
+                <a href="#admit-cards-fj">Admit Card</a>
+                <a href="#results-fj">Results</a>
+                <a href="#syllabus">Syllabus</a>
+                <a href="#answer-key">Answer Key</a>
+                <a href="#admission-fj">Admission</a>
+                <a href="#university-update">University</a>
+                <a href="#scholarship-fj">Scholarship</a>
+                <a href="#sarkari-yojana">Yojana</a>
+                <a href="#services">IT Services</a>
                 <a href="#contact" class="nav-cta"><i class="fas fa-phone"></i> Contact</a>
             </nav>
         </div>
@@ -1291,6 +1545,620 @@
             <div class="stat-item">
                 <span class="number">24/7</span>
                 <span class="label">Support Available</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATE STRIP (Fastjob Searchers States) ===== -->
+    <section class="state-strip">
+        <div class="container">
+            <div class="strip-title">
+                <i class="fas fa-map-marker-alt"></i> Fastjob Searchers — हमारी सेवाएँ उपलब्ध राज्य <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="state-tags">
+                <span class="state-tag">🇮🇳 All India</span>
+                <span class="state-tag">Andhra Pradesh</span>
+                <span class="state-tag">Assam</span>
+                <span class="state-tag">Bihar</span>
+                <span class="state-tag">Chhattisgarh</span>
+                <span class="state-tag">Delhi</span>
+                <span class="state-tag">Jharkhand</span>
+                <span class="state-tag">Haryana</span>
+                <span class="state-tag">Himachal Pradesh</span>
+                <span class="state-tag">Madhya Pradesh</span>
+                <span class="state-tag">Odisha</span>
+                <span class="state-tag">Rajasthan</span>
+                <span class="state-tag">Tamil Nadu</span>
+                <span class="state-tag">Telangana</span>
+                <span class="state-tag">Uttarakhand</span>
+                <span class="state-tag">Uttar Pradesh</span>
+                <span class="state-tag">West Bengal</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TELEGRAM/WHATSAPP/APP BANNER ===== -->
+    <section class="social-banner">
+        <div class="container banner-wrap">
+            <a href="#" class="banner-item telegram">
+                <i class="fab fa-telegram-plane"></i>
+                <span>Join Telegram Channel <small>@FastjobSearchers</small></span>
+            </a>
+            <a href="#" class="banner-item whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>Join WhatsApp Channel <small>Fastjob Searchers</small></span>
+            </a>
+            <a href="#" class="banner-item app">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Download App <small>Fastjob Searchers App</small></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FASTJOB SEARCHERS - TOP HEADER ===== -->
+    <section class="main-services" style="padding:30px 0;">
+        <div class="container">
+            <div class="fj-meta">
+                <span class="fj-badge"><i class="fas fa-bolt"></i> Fastjob Searchers</span>
+                <span class="fj-tagline"><i class="fas fa-clock"></i> सबसे तेज Update!</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CURRENT JOB (सरकारी नौकरी) ===== -->
+    <section id="current-job" class="govt-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-briefcase"></i> Current <span class="gold">Job</span> <span style="font-size:1.2rem;color:#8899bb;">(सरकारी नौकरी)</span>
+            </div>
+            <p class="section-sub">देशभर की सरकारी नौकरियों की ताज़ा जानकारी एक ही जगह</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-briefcase" style="color:#f0c040;"></i>
+                        <h3>भर्ती / रिक्तियां <small>Latest Job Openings</small></h3>
+                    </div>
+                    <ul>
+                        <li>PNB LBO Recruitment 2026</li>
+                        <li>JSSC Inter Level Vacancy 2026</li>
+                        <li>NICL Assistant Recruitment 2026</li>
+                        <li>NFR Apprentice Recruitment 2026</li>
+                        <li>IGCAR Apprentice Recruitment</li>
+                        <li>UTET 2026 Application Form</li>
+                        <li>RRB Section Controller Recruitment 2026</li>
+                        <li>BPSSC Forest Range Officer Vacancy 2026</li>
+                        <li>BSUSC Assistant Professor Vacancy 2026</li>
+                        <li>Indian Air Force Agniveervayu Intake 02 2027</li>
+                        <li>Indian Air Force Medical Assistant Intake 02 2027</li>
+                        <li>BPSSC SI General Closed Cadre Vacancy 2026</li>
+                        <li>MP Anganwadi Vacancy 2026</li>
+                        <li>RSSB CET Graduation Level 2026</li>
+                        <li>IBPS PO Recruitment 2026</li>
+                        <li>IBPS SO Vacancy 2026 Online</li>
+                        <li>NIACL Apprentice Recruitment</li>
+                        <li>Delhi High Court DHJSE 2026</li>
+                        <li>RPSC RAS 2026 Online Form</li>
+                        <li>UPSSSC Forest Guard &amp; Wild Life Guard Recruitment 2026</li>
+                        <li>BPSSC Company Commander Recruitment 2026</li>
+                        <li>RRB Technician Vacancy 2026</li>
+                        <li>ISRO ISTRAC Recruitment 2026</li>
+                        <li>HSSC CET Phase 2 Group C Recruitment 2026</li>
+                        <li>RVUNL Recruitment 2026 Online</li>
+                        <li>RSSB CET 12th Level 2026</li>
+                        <li>UPSSSC Vidhan Bhawan Guard/ Fire Guard Recruitment 2026</li>
+                        <li>SSC CHSL Option-cum-Preference Form 2026</li>
+                        <li>HSSC CET Group D Online Form</li>
+                        <li>JSSC CGL Technical JTGLCCE Recruitment 2026</li>
+                        <li>UPSSSC Block Organizer/ Platoon Commander Recruitment 2026</li>
+                        <li>SBI PO Recruitment 2026 Online</li>
+                        <li>Central Bank of India Apprentice Recruitment 2026</li>
+                        <li>RRB Group D CCAAs Course Modification Window 2026</li>
+                        <li>Rajasthan SET 2026 Online Form</li>
+                    </ul>
+                    <div class="view-all-wrap">
+                        <a href="#" class="view-all-link"><i class="fas fa-arrow-right"></i> View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ADMIT CARDS (प्रवेश पत्र) - Expanded ===== -->
+    <section id="admit-cards-fj" class="main-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-ticket-alt"></i> <span class="gold">Admit</span> Card <span style="font-size:1.2rem;color:#8899bb;">(प्रवेश पत्र)</span>
+            </div>
+            <p class="section-sub">विभिन्न परीक्षाओं के एडमिट कार्ड — डाउनलोड करें</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-download" style="color:#f0c040;"></i>
+                        <h3>एडमिट कार्ड <small>Admit Cards</small></h3>
+                    </div>
+                    <ul>
+                        <li>RSSB Women Supervisor Admit Card 2026</li>
+                        <li>AIIMS CRE 5 Exam City 2026</li>
+                        <li>RRB ALP CBT 2 Exam City Slip 2026</li>
+                        <li>BPSC 72 Pre Exam Postponed 2026</li>
+                        <li>SBI PO PET Materials 2026</li>
+                        <li>CGPSC Assistant Librarian Admit Card 2026</li>
+                        <li>RBI Officer Grade B Phase-II Admit Card 2026</li>
+                        <li>BPSSC ASI Technical Admit Card 2026</li>
+                        <li>BPSSC Havildar Instructor Admit Card 2026</li>
+                        <li>CSIR UGC NET June 2026 Admit Card</li>
+                        <li>CG Vyapam Nagar Sena Fireman Bharti Admit Card 2026</li>
+                        <li>JSSC Field Worker Exam City 2026</li>
+                        <li>IB MTS Tier II Admit Card 2026</li>
+                        <li>RRB NTPC UG DV Call Letter 2026</li>
+                        <li>RRB Section Controller DV Call Letter 2026</li>
+                        <li>UPSC CAPF AC Admit Card 2026</li>
+                        <li>RRB Ministerial &amp; Isolated Categories Admit Card 2026</li>
+                        <li>RRB Group D Application Status 2026</li>
+                        <li>RPSC 2nd Grade Admit Card 2026</li>
+                        <li>BPSC Prosecution Officer Admit Card 2026</li>
+                        <li>BPSC Research Officer Admit Card 2026</li>
+                        <li>CBSE Group ABC Skill Test Admit Card 2026</li>
+                        <li>JSSC Paramedical Staff Admit Card 2026</li>
+                        <li>BPSSC ASI Operation Admit Card 2026</li>
+                        <li>UP Home Guard DV/ PST Admit Card 2026</li>
+                        <li>BPSSC Havildar Instructor Rejected List 2026</li>
+                        <li>RRB NTPC Graduate CBT 2 Admit Card 2026</li>
+                        <li>LNMU Sem 2 Admit Card 2026</li>
+                        <li>SBI CBO Interview Call Letter 2026</li>
+                        <li>RRB Group D Exam Date 2026</li>
+                        <li>Indian Air Force Medical Assistant Phase-II Admit Card 2026</li>
+                        <li>Indian Air Force Agniveervayu Phase II Admit Card 2026</li>
+                    </ul>
+                    <div class="view-all-wrap">
+                        <a href="#" class="view-all-link"><i class="fas fa-arrow-right"></i> View All Admit Cards</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESULTS (परीक्षा परिणाम) - Expanded ===== -->
+    <section id="results-fj" class="govt-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-trophy"></i> <span class="gold">Result</span> <span style="font-size:1.2rem;color:#8899bb;">(परीक्षा परिणाम)</span>
+            </div>
+            <p class="section-sub">सभी प्रतियोगी परीक्षाओं और बोर्ड परीक्षाओं के परिणाम</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-chart-line" style="color:#f0c040;"></i>
+                        <h3>परिणाम <small>Results</small></h3>
+                    </div>
+                    <ul>
+                        <li>BPSC 70th Marksheet 2026</li>
+                        <li>BTSC OT Assistant Result 2026</li>
+                        <li>RSK MPOnline 3rd Allotment Letter 2026</li>
+                        <li>Bihar BEd 3rd Merit List 2026</li>
+                        <li>CBSE 10th Second Exam Results 2026</li>
+                        <li>LNMU UG 2nd Merit List 2026</li>
+                        <li>Bihar ITI 2nd Seat Allotment Result 2026</li>
+                        <li>AIBE 21 Exam Result 2026</li>
+                        <li>RSSB Platoon Commander Result After Interview 2026</li>
+                        <li>MPESB Subedar and ASI Final Result 2026</li>
+                        <li>NEET UG Result 2026 Download</li>
+                        <li>CG Vyapam Pre BEd Result 2026</li>
+                        <li>BTSC ECG Technician Result 2026</li>
+                        <li>Pre DElEd BSTC 2nd College Allotment 2026</li>
+                        <li>RSSB Librarian Grade 3 Final Result 2026</li>
+                        <li>UP Police SI Final Result 2026</li>
+                        <li>MPESB Primary School Teacher Revised Result 2026</li>
+                        <li>RBI JE Result 2026 Download</li>
+                        <li>Magadh University UG 2nd Merit List 2026</li>
+                        <li>Indian Army Agniveer Result 2026</li>
+                        <li>JPU UG 2nd Merit List 2026</li>
+                        <li>SSC JE FRTA Result 2026</li>
+                        <li>Bihar Panchayati Raj Technical Assistant Final Merit List 2026</li>
+                        <li>Bihar Diploma LE 1st Round Seat Allotment Result 2026</li>
+                        <li>Bihar Vidhan Parishad Stenographer Final Result 2026</li>
+                        <li>SSC Delhi Police Constable Executive Marks 2026</li>
+                        <li>Bihar Polytechnic Seat Allotment Result 2026</li>
+                        <li>MPESB SI Final Result 2026</li>
+                        <li>JPSC ACF Mains Result 2026</li>
+                        <li>BRABU UG 3rd Merit List 2026</li>
+                        <li>LIC HFL Junior Assistant Result 2026</li>
+                        <li>JPSC Forest Range Officer Mains Result 2026</li>
+                        <li>JCECEB Jharkhand BEd Result 2026</li>
+                    </ul>
+                    <div class="view-all-wrap">
+                        <a href="#" class="view-all-link"><i class="fas fa-arrow-right"></i> View All Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SYLLABUS (सिलेबस) - New Section ===== -->
+    <section id="syllabus" class="main-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-book"></i> <span class="gold">Syllabus</span> <span style="font-size:1.2rem;color:#8899bb;">(सिलेबस / पाठ्यक्रम)</span>
+            </div>
+            <p class="section-sub">सभी प्रतियोगी परीक्षाओं का नवीनतम पाठ्यक्रम डाउनलोड करें</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-file-alt" style="color:#f0c040;"></i>
+                        <h3>सिलेबस <small>Syllabus PDF</small></h3>
+                    </div>
+                    <ul>
+                        <li>RRB Section Controller Syllabus 2026</li>
+                        <li>BPSSC SI General Closed Cadre Syllabus 2026</li>
+                        <li>RRB ALP Syllabus 2026</li>
+                        <li>CG Vyapam Nagar Sena Fireman Syllabus 2026</li>
+                        <li>MPESB Hospital Assistant Syllabus 2026</li>
+                        <li>CRPF Constable Tradesman Syllabus 2026</li>
+                        <li>Jharkhand TET JTET Syllabus 2026</li>
+                        <li>UP TET Syllabus 2026 PDF</li>
+                        <li>Railway Group D Syllabus 2026</li>
+                        <li>JSSC Kakshpal Syllabus 2026</li>
+                        <li>UP Police Constable Syllabus 2026</li>
+                        <li>BSSC 2nd Inter Level Syllabus 2025</li>
+                        <li>MP Police Constable Syllabus 2025</li>
+                        <li>Bihar STET Syllabus 2025</li>
+                        <li>BPSC AEDO Syllabus 2025</li>
+                        <li>BSSC Office Attendant Syllabus 2025</li>
+                        <li>BSSC CGL 4 Syllabus 2025</li>
+                        <li>BSSC Laboratory Assistant Syllabus 2025</li>
+                        <li>BSSC Field Assistant Syllabus 2025</li>
+                        <li>RRB ALP Syllabus 2025</li>
+                    </ul>
+                    <div class="view-all-wrap">
+                        <a href="#" class="view-all-link"><i class="fas fa-arrow-right"></i> View All Syllabus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ANSWER KEY (उत्तर कुंजी) - New Section ===== -->
+    <section id="answer-key" class="govt-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-key"></i> Answer <span class="gold">Key</span> <span style="font-size:1.2rem;color:#8899bb;">(उत्तर कुंजी)</span>
+            </div>
+            <p class="section-sub">सभी प्रतियोगी परीक्षाओं की उत्तर कुंजी डाउनलोड करें</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-check-double" style="color:#f0c040;"></i>
+                        <h3>उत्तर कुंजी <small>Answer Keys</small></h3>
+                    </div>
+                    <ul>
+                        <li>NEET UG Final Answer Key 2026</li>
+                        <li>RRB NTPC CBT-II Graduate Level Answer Key 2026</li>
+                        <li>MP PNST Answer Key 2026</li>
+                        <li>CGPSC SI Pre Exam Answer Key 2026</li>
+                        <li>HP TET Answer Key 2026</li>
+                        <li>RRB JE CBT 2 Answer Key 2026</li>
+                        <li>AIBE 21 Final Answer Key 2026</li>
+                        <li>MPESB Hospital Assistant Answer Key 2026</li>
+                        <li>SSB Head Constable Ministerial HCM Answer Key 2026</li>
+                        <li>UPTET Answer Key 2026</li>
+                        <li>BPSC Stenographer Answer Key 2026</li>
+                        <li>BPSC Assistant Environmental Scientist Answer Key 2026</li>
+                        <li>HTET Answer Key 2026</li>
+                        <li>HP JBT Answer Key 2026</li>
+                        <li>Bihar DElEd Answer Key 2026</li>
+                        <li>UPSSSC UPPCB Mains Answer Key 2026</li>
+                        <li>UPSSSC BCG Technician Answer Key 2026</li>
+                        <li>UPSSSC Pharmacist Answer Key 2026</li>
+                    </ul>
+                    <div class="view-all-wrap">
+                        <a href="#" class="view-all-link"><i class="fas fa-arrow-right"></i> View All Answer Keys</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ADMISSION (नामांकन) - Expanded ===== -->
+    <section id="admission-fj" class="main-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-graduation-cap"></i> <span class="gold">Admission</span> <span style="font-size:1.2rem;color:#8899bb;">(नामांकन / प्रवेश)</span>
+            </div>
+            <p class="section-sub">स्कूल, कॉलेज और विश्वविद्यालयों में प्रवेश की सम्पूर्ण जानकारी</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-school" style="color:#f0c040;"></i>
+                        <h3>नामांकन <small>Admissions</small></h3>
+                    </div>
+                    <ul>
+                        <li>BCECE Counselling 2026</li>
+                        <li>JCECEB Jharkhand BEd Counselling 2026</li>
+                        <li>JCECEB Jharkhand BSc Nursing ANM GNM Application Form 2026</li>
+                        <li>Patliputra University PPU UG Admission Re-open 2026</li>
+                        <li>BCECE LE Counselling 2026</li>
+                        <li>Jawahar Navodaya Vidyalaya Selection Test JNVST 2027</li>
+                        <li>PTET Counselling 2026</li>
+                        <li>UP BEd Counselling 2026</li>
+                        <li>OFSS Bihar Spot Admission 2026</li>
+                        <li>Bihar Polytechnic Counselling 2026</li>
+                        <li>Bihar ITI Counselling 2026</li>
+                        <li>VKSU UG Admission 2026-30</li>
+                        <li>UP DELEd Admission Online Form</li>
+                        <li>Chancellor Portal Jharkhand University UG Admission 2026</li>
+                        <li>Purnea University UG Admission 2026</li>
+                        <li>LNMU UG Admission 2026</li>
+                        <li>DCECE Bihar Polytechnic Form</li>
+                        <li>HP JBT Entrance Exam 2026 Form</li>
+                        <li>CG Vyapam Pre DElEd 2026 Online</li>
+                        <li>NIMCET 2026 Application Form</li>
+                        <li>TS POLYCET Application 2026</li>
+                    </ul>
+                    <div class="view-all-wrap">
+                        <a href="#" class="view-all-link"><i class="fas fa-arrow-right"></i> View All Admissions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== UNIVERSITY UPDATE (विश्वविद्यालय अपडेट) - New ===== -->
+    <section id="university-update" class="govt-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-university"></i> University <span class="gold">Update</span> <span style="font-size:1.2rem;color:#8899bb;">(विश्वविद्यालय अपडेट)</span>
+            </div>
+            <p class="section-sub">विश्वविद्यालयों के परिणाम, प्रवेश पत्र और नवीनतम अपडेट</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-university" style="color:#f0c040;"></i>
+                        <h3>विश्वविद्यालय <small>University Updates</small></h3>
+                    </div>
+                    <ul>
+                        <li>PPU Semester 2 Result 2025-29</li>
+                        <li>UOK Admit Card 2026</li>
+                        <li>JNVU Admit Card 2026</li>
+                        <li>LNMU Sem 2 Admit Card 2026</li>
+                        <li>PDUSU Admit Card 2026</li>
+                        <li>VMOU Admit Card June 2026</li>
+                        <li>PPU Semester 4 Admit Card 2026</li>
+                        <li>VKSU Semester 6 Result 2026</li>
+                        <li>Uniraj Semester 2 Admit Card 2026</li>
+                        <li>LNMU Semester 1 Result 2025 29</li>
+                        <li>BRABU UG Semester 1 Result 2025 29</li>
+                        <li>IGNOU Hall Ticket June 2026</li>
+                        <li>LNMU Semester 5 Admit Card 2023-27</li>
+                        <li>VKSU UG Semester 4 Admit Card 2024-28</li>
+                        <li>VKSU Semester 6 Admit Card 2023-27</li>
+                        <li>Magadh University Semester 5 Result 2023-27</li>
+                        <li>LNMU Semester 4 Result 2023 27</li>
+                        <li>BRABU Semester 4 Result 2023 27</li>
+                        <li>Munger University UG Semester 4 Result 2023-27</li>
+                        <li>Uniraj Admit Card 2026</li>
+                        <li>MLSU Admit Card 2026</li>
+                        <li>BRABU Semester 2 Result 2024 28</li>
+                        <li>Magadh University Semester 3 Result 2024 28</li>
+                        <li>IGNOU Result December 2025</li>
+                    </ul>
+                    <div class="view-all-wrap">
+                        <a href="#" class="view-all-link"><i class="fas fa-arrow-right"></i> View All University Updates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SCHOLARSHIP (छात्रवृत्ति) - Expanded ===== -->
+    <section id="scholarship-fj" class="main-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-hand-holding-usd"></i> <span class="gold">Scholarship</span> <span style="font-size:1.2rem;color:#8899bb;">(छात्रवृत्ति)</span>
+            </div>
+            <p class="section-sub">सरकारी छात्रवृत्ति योजनाओं के लिए आवेदन और जानकारी</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-award" style="color:#f0c040;"></i>
+                        <h3>छात्रवृत्ति <small>Scholarships</small></h3>
+                    </div>
+                    <ul>
+                        <li>NSP Scholarship Online Form 2026</li>
+                        <li>PMS Online Bihar Post Matric Scholarship 2026-27 <span class="status-tag new">Started</span></li>
+                        <li>RTPS Bihar — Apply For जाति/ आवासीय/ आय प्रमाण</li>
+                        <li>Ekalyan Jharkhand Post Matric Scholarship 2026-27</li>
+                        <li>Medhasoft Scholarship 2026</li>
+                    </ul>
+                    <div class="view-all-wrap">
+                        <a href="#" class="view-all-link"><i class="fas fa-arrow-right"></i> View All Scholarships</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SARKARI YOJANA (सरकारी योजना) - New ===== -->
+    <section id="sarkari-yojana" class="govt-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-hand-holding-heart"></i> Sarkari <span class="gold">Yojana</span> <span style="font-size:1.2rem;color:#8899bb;">(सरकारी योजना)</span>
+            </div>
+            <p class="section-sub">सरकार की प्रमुख योजनाओं का लाभ उठाएँ — ऑनलाइन आवेदन करें</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-gift" style="color:#f0c040;"></i>
+                        <h3>सरकारी योजनाएँ <small>Government Schemes</small></h3>
+                    </div>
+                    <ul>
+                        <li>CM Pratigya Yojana 2025 Apply Online</li>
+                        <li>Bihar Student Credit Card Apply Online, BSCC Login</li>
+                        <li>बिहार मुख्‍यमंत्री निश्‍चय स्‍वयं सहायता भत्ता योजना Apply</li>
+                        <li>PM Internship Scheme 2024 Online</li>
+                        <li>Bihar Rajya Fasal Sahayata Yojana 2024 आवेदन</li>
+                        <li>Seekho Kamao Yojana Online</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DOCUMENTS (दस्तावेज़) - New ===== -->
+    <section id="documents" class="main-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-file"></i> <span class="gold">Documents</span> <span style="font-size:1.2rem;color:#8899bb;">(दस्तावेज़ / प्रमाण पत्र)</span>
+            </div>
+            <p class="section-sub">महत्वपूर्ण दस्तावेज़ ऑनलाइन डाउनलोड करें</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-id-card" style="color:#f0c040;"></i>
+                        <h3>दस्तावेज़ <small>Important Documents</small></h3>
+                    </div>
+                    <ul>
+                        <li>Voter ID Card Download</li>
+                        <li>e Shram Card Download PDF</li>
+                        <li>BCECE Apply Online, Notification</li>
+                        <li>Aadhar Card Download Online</li>
+                        <li>Ayushman Card Online Apply</li>
+                        <li>Aadhar Card Status Check</li>
+                        <li>Ayushman Card Download करे</li>
+                        <li>ABHA Card Download करे</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== UPCOMING JOB (आगामी भर्ती) - New ===== -->
+    <section id="upcoming-job" class="govt-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-hourglass-start"></i> Upcoming <span class="gold">Job</span> <span style="font-size:1.2rem;color:#8899bb;">(आगामी भर्ती)</span>
+            </div>
+            <p class="section-sub">जल्द आने वाली सरकारी नौकरियों की सूचना</p>
+            <div class="govt-grid">
+                <div class="govt-card">
+                    <div class="govt-header">
+                        <i class="fas fa-calendar-alt" style="color:#f0c040;"></i>
+                        <h3>आगामी भर्ती <small>Upcoming Recruitments</small></h3>
+                    </div>
+                    <ul>
+                        <li>JSSC Inter Level Vacancy 2026</li>
+                        <li>RVUNL Recruitment 2026 Online Form</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LATEST BLOG (ब्लॉग) - New ===== -->
+    <section id="latest-blog" class="main-services">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-blog"></i> Latest <span class="gold">Blog</span> <span style="font-size:1.2rem;color:#8899bb;">(ब्लॉग)</span>
+            </div>
+            <p class="section-sub">सरकारी योजनाओं, परीक्षाओं और नियुक्तियों से संबंधित नवीनतम ब्लॉग</p>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <h4>CM Pratigya Yojana 2025 Apply Online</h4>
+                    <p>मुख्यमंत्री प्रतिज्ञा योजना के तहत आवेदन की पूरी प्रक्रिया</p>
+                    <span class="blog-tag"><i class="fas fa-tag"></i> Sarkari Yojana</span>
+                </div>
+                <div class="blog-card">
+                    <h4>RRB ALP Syllabus 2025 in Hindi</h4>
+                    <p>रेलवे ALP परीक्षा के लिए पूरा सिलेबस हिंदी में</p>
+                    <span class="blog-tag"><i class="fas fa-tag"></i> Syllabus</span>
+                </div>
+                <div class="blog-card">
+                    <h4>RRB ALP Exam Date 2024 जारी हुआ</h4>
+                    <p>रेलवे ALP परीक्षा की तारीख घोषित</p>
+                    <span class="blog-tag"><i class="fas fa-tag"></i> Exam Date</span>
+                </div>
+                <div class="blog-card">
+                    <h4>SSC GD Syllabus 2025 हिन्दी में</h4>
+                    <p>SSC GD कांस्टेबल परीक्षा का पाठ्यक्रम हिंदी में</p>
+                    <span class="blog-tag"><i class="fas fa-tag"></i> Syllabus</span>
+                </div>
+                <div class="blog-card">
+                    <h4>Har Ghar Tiranga Upload Selfie 2024</h4>
+                    <p>हर घर तिरंगा अभियान के तहत सेल्फी अपलोड करें</p>
+                    <span class="blog-tag"><i class="fas fa-tag"></i> Campaign</span>
+                </div>
+                <div class="blog-card">
+                    <h4>eKalyan Status Jharkhand 2024</h4>
+                    <p>झारखंड eकल्याण छात्रवृत्ति की स्थिति जाँचें</p>
+                    <span class="blog-tag"><i class="fas fa-tag"></i> Scholarship</span>
+                </div>
+                <div class="blog-card">
+                    <h4>PM Kisan Check Status 2024</h4>
+                    <p>प्रधानमंत्री किसान सम्मान निधि की स्थिति जाँचें</p>
+                    <span class="blog-tag"><i class="fas fa-tag"></i> Yojana</span>
+                </div>
+                <div class="blog-card">
+                    <h4>BPSC Teacher Syllabus 2024 Hindi</h4>
+                    <p>BPSC शिक्षक भर्ती परीक्षा का सिलेबस हिंदी में</p>
+                    <span class="blog-tag"><i class="fas fa-tag"></i> Syllabus</span>
+                </div>
+            </div>
+            <div class="view-all-wrap">
+                <a href="#" class="view-all-link"><i class="fas fa-arrow-right"></i> View All Blogs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT FASTJOB SEARCHERS ===== -->
+    <section id="about-fastjob" class="about-fj">
+        <div class="container" style="padding:60px 25px;">
+            <div class="section-title">
+                <i class="fas fa-info-circle"></i> About <span class="gold">Fastjob Searchers</span>
+            </div>
+            <p class="section-sub">Fastjob Searchers के बारे में सम्पूर्ण जानकारी</p>
+            <div class="about-fj-content">
+                <h3><i class="fas fa-bolt"></i> Fastjob Searchers — सबसे तेज Update!</h3>
+                <p>
+                    <strong>Fastjob Searchers</strong> is a popular job website in India which website address is <strong>https://www.fastjobsearchers.com</strong>. This website was created in 2017 with an aim to provides job updates to millions of job seekers who are wishing to join government job. At present Fastjob Searchers provides job updates of more than 15 (fifteen) important states of India.
+                </p>
+                <p>
+                    <i class="fas fa-quote-left" style="color:#f0c040;"></i>
+                    <em>"Dear user we are strengthening our coverage with quick response to deliver job updates accurately with greater user experience."</em>
+                    <i class="fas fa-quote-right" style="color:#f0c040;"></i>
+                    <br><span style="color:#6678a0;">— Message from Admin</span>
+                </p>
+                <p>
+                    It is a very light and fast job website with beautiful design in respect of user experience. We are using simple and commonly used English words for taking care of all kinds of visitors.
+                </p>
+                <h3 style="margin-top:25px;"><i class="fas fa-star"></i> Features of Fastjob Searchers</h3>
+                <ul class="fj-features">
+                    <li><i class="fas fa-briefcase"></i> Current Job (Sarkari Job)</li>
+                    <li><i class="fas fa-ticket-alt"></i> Admit Card</li>
+                    <li><i class="fas fa-trophy"></i> Result (Sarkari Result)</li>
+                    <li><i class="fas fa-book"></i> Syllabus</li>
+                    <li><i class="fas fa-key"></i> Answer Key</li>
+                    <li><i class="fas fa-graduation-cap"></i> Admission</li>
+                    <li><i class="fas fa-calendar-alt"></i> Exam Date Alert</li>
+                    <li><i class="fas fa-hand-holding-usd"></i> Scholarship</li>
+                    <li><i class="fas fa-university"></i> University Update</li>
+                    <li><i class="fas fa-blog"></i> Blogs &amp; News</li>
+                    <li><i class="fas fa-mobile-alt"></i> Android App</li>
+                    <li><i class="fas fa-telegram"></i> Telegram Channel</li>
+                </ul>
+                <h3 style="margin-top:25px;"><i class="fas fa-globe"></i> Fastjob Searchers Coverage</h3>
+                <p>
+                    We are happy to announce you now extend our coverage in more than 15 (fifteen) important states of our country. This portal is also dedicated for central government job updates. We are also providing almost each and every updates related to central government recruitment. In addition to job updates, you will also get update of Admit Card, Syllabus Answer Key and Result of any state and central government recruitment.
+                </p>
+                <div style="margin-top:15px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+                    <span style="background:rgba(240,192,64,0.05);padding:5px 20px;border-radius:20px;border:1px solid rgba(240,192,64,0.1);color:#8899bb;"><i class="fas fa-check-circle" style="color:#f0c040;"></i> 15+ States Coverage</span>
+                    <span style="background:rgba(240,192,64,0.05);padding:5px 20px;border-radius:20px;border:1px solid rgba(240,192,64,0.1);color:#8899bb;"><i class="fas fa-check-circle" style="color:#f0c040;"></i> Central Govt Jobs</span>
+                    <span style="background:rgba(240,192,64,0.05);padding:5px 20px;border-radius:20px;border:1px solid rgba(240,192,64,0.1);color:#8899bb;"><i class="fas fa-check-circle" style="color:#f0c040;"></i> All Exam Updates</span>
+                    <span style="background:rgba(240,192,64,0.05);padding:5px 20px;border-radius:20px;border:1px solid rgba(240,192,64,0.1);color:#8899bb;"><i class="fas fa-check-circle" style="color:#f0c040;"></i> Android App Available</span>
+                </div>
+                <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(240,192,64,0.05);">
+                    <p style="font-size:0.85rem;color:#6678a0;">
+                        <strong style="color:#f0c040;">Disclaimer:</strong> This website will not be responsible at all in case of minor or major mistakes or inaccuracy. All the information provided by this website is true and accurate according to the recruitment notification or advertisement. Before taking any action please look into the recruitment notification or advertisement or portal.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
