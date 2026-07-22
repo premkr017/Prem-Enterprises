@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security — Prem Enterprises</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ===== SECURITY HERO ===== */
+        .security-hero {
+            padding: 60px 0 50px;
+            background: linear-gradient(135deg, #0a0e1a 0%, #111b30 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+        .security-hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(240, 192, 64, 0.03), transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+        .security-hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .security-hero-content .shield-icon {
+            font-size: 4rem;
+            color: #f0c040;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .security-hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.2;
+        }
+        .security-hero-content h1 .gold {
+            color: #f0c040;
+        }
+        .security-hero-content p {
+            color: #8899bb;
+            font-size: 1.1rem;
+            margin: 15px auto 30px;
+            max-width: 650px;
+        }
+        /* ===== TOOL CARD ===== */
+        .tool-card {
+            background: linear-gradient(145deg, #141c30, #0f1628);
+            padding: 45px 40px;
+            border-radius: 30px;
+            border: 1px solid rgba(240, 192, 64, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #f0c040, #d4a020, #f0c040);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+        }
+        .tool-card .tool-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        .tool-card .tool-header .tool-logo {
+            width: 70px;
+            height: 70px;
+            background: rgba(240, 192, 64, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #f0c040;
+            flex-shrink: 0;
+            border: 1px solid rgba(240, 192, 64, 0.1);
+        }
+        .tool-card .tool-header .tool-info h3 {
+            color: #fff;
+            font-size: 1.6rem;
+        }
+        .tool-card .tool-header .tool-info .tool-url {
+            color: #6678a0;
+            font-size: 0.85rem;
+            word-break: break-all;
+        }
+        .tool-card .tool-header .tool-info .tool-url i {
+            color: #f0c040;
+            margin-right: 5px;
+        }
+        .tool-card .tool-desc {
+            color: #b0c4e0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            padding: 20px 0;
+            border-top: 1px solid rgba(240, 192, 64, 0.05);
+            border-bottom: 1px solid rgba(240, 192, 64, 0.05);
+        }
+        .tool-card .tool-desc i {
+            color: #f0c040;
+            margin-right: 8px;
+        }
+        .tool-card .tool-btn-wrap {
+            margin-top: 25px;
+            text-align: center;
+        }
+        .tool-card .tool-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #f0c040, #d4a020);
+            color: #0a0e1a;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 8px 30px rgba(240, 192, 64, 0.3);
+        }
+        .tool-card .tool-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 50px rgba(240, 192, 64, 0.5);
+        }
+        .tool-card .tool-btn i {
+            font-size: 1.4rem;
+        }
+        /* ===== BENEFITS GRID ===== */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .benefit-card {
+            background: linear-gradient(145deg, #141c30, #0f1628);
+            padding: 30px 25px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(240, 192, 64, 0.05);
+            transition: 0.4s;
+        }
+        .benefit-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(240, 192, 64, 0.2);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        .benefit-card .benefit-icon {
+            width: 65px;
+            height: 65px;
+            background: rgba(240, 192, 64, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 2rem;
+            color: #f0c040;
+            transition: 0.3s;
+        }
+        .benefit-card:hover .benefit-icon {
+            background: linear-gradient(135deg, #f0c040, #d4a020);
+            color: #0a0e1a;
+        }
+        .benefit-card h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        .benefit-card p {
+            color: #8899bb;
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+        /* ===== SAFETY GUIDE ===== */
+        .safety-guide {
+            background: linear-gradient(145deg, #141c30, #0f1628);
+            padding: 45px 40px;
+            border-radius: 30px;
+            border: 1px solid rgba(240, 192, 64, 0.08);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .safety-guide .guide-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .safety-guide .guide-title i {
+            color: #f0c040;
+            margin-right: 12px;
+        }
+        .safety-guide .guide-title .gold {
+            color: #f0c040;
+        }
+        .guide-step {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(240, 192, 64, 0.05);
+        }
+        .guide-step:last-child {
+            border-bottom: none;
+        }
+        .guide-step .step-num {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #f0c040, #d4a020);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.3rem;
+            color: #0a0e1a;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .guide-step .step-content h4 {
+            color: #fff;
+            font-size: 1.15rem;
+            margin-bottom: 5px;
+        }
+        .guide-step .step-content p {
+            color: #8899bb;
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+        .guide-step .step-content p i {
+            color: #f0c040;
+            margin-right: 6px;
+        }
+        @media (max-width: 768px) {
+            .security-hero-content h1 { font-size: 2rem; }
+            .tool-card { padding: 25px 20px; }
+            .tool-card .tool-header { flex-direction: column; text-align: center; }
+            .tool-card .tool-desc { font-size: 0.95rem; }
+            .tool-card .tool-btn { width: 100%; justify-content: center; padding: 15px 30px; }
+            .safety-guide { padding: 25px 20px; }
+            .guide-step { flex-direction: column; text-align: center; }
+            .guide-step .step-num { margin: 0 auto; }
+            .benefits-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Prem <span>Enterprises</span></h1>
+                    <p>&#9889; Smart IT Solutions</p>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="security.html" style="color:#f0c040;">Security</a>
+                <a href="contact.html" class="nav-cta"><i class="fas fa-phone"></i> Contact</a>
+                <a href="#" class="search-icon-btn" title="Search (Ctrl+K)"><i class="fas fa-search"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== SECURITY HERO ===== -->
+    <section class="security-hero">
+        <div class="container security-hero-content">
+            <i class="fas fa-shield-alt shield-icon"></i>
+            <h1>&#128274; <span class="gold">Cyber Security</span> &amp; Safety</h1>
+            <p>
+                <i class="fas fa-check-circle" style="color:#f0c040;"></i> 
+                जानिए कैसे अपने डेटा को सुरक्षित रखें — Data Leaks, Scams और Hackers से बचने के लिए पूरी गाइड
+            </p>
+            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+                <span style="background:rgba(240,192,64,0.05);padding:5px 18px;border-radius:20px;border:1px solid rgba(240,192,64,0.1);color:#8899bb;font-size:0.85rem;">&#128737; Data Protection</span>
+                <span style="background:rgba(240,192,64,0.05);padding:5px 18px;border-radius:20px;border:1px solid rgba(240,192,64,0.1);color:#8899bb;font-size:0.85rem;">&#128269; Leak Check</span>
+                <span style="background:rgba(240,192,64,0.05);padding:5px 18px;border-radius:20px;border:1px solid rgba(240,192,64,0.1);color:#8899bb;font-size:0.85rem;">&#128274; 2FA Security</span>
+                <span style="background:rgba(240,192,64,0.05);padding:5px 18px;border-radius:20px;border:1px solid rgba(240,192,64,0.1);color:#8899bb;font-size:0.85rem;">&#9888; Scam Alert</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 1: CHECK IF YOUR EMAIL IS LEAKED ===== -->
+    <section class="main-services" style="padding:80px 0;">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-search"></i> Check If Your <span class="gold">Email</span> Is Leaked
+            </div>
+            <p class="section-sub">जानिए कहीं आपका ईमेल किसी Data Leak में तो शामिल नहीं — और कैसे रहें सुरक्षित</p>
+
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-logo">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="tool-info">
+                        <h3>&#128269; Have I Been Pwned</h3>
+                        <p class="tool-url">
+                            <i class="fas fa-globe"></i> 
+                            <a href="https://haveibeenpwned.com/" target="_blank" style="color:#b0c4e0;text-decoration:none;">https://haveibeenpwned.com/</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="tool-desc">
+                    <i class="fas fa-info-circle"></i> 
+                    यह एक <strong>मुफ्त और सुरक्षित</strong> website है जहां कोई भी व्यक्ति अपना <strong>Email ID</strong> या <strong>Phone Number</strong> डालकर चेक कर सकता है कि उनका डेटा किसी ऑनलाइन कंपनी के <strong>Data Leak</strong> में एक्सपोज़ हुआ है या नहीं।
+                </div>
+                <div class="tool-btn-wrap">
+                    <a href="https://haveibeenpwned.com/" target="_blank" class="tool-btn">
+                        <i class="fas fa-external-link-alt"></i> Check Your Email Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div style="margin-top:50px;">
+                <h3 style="text-align:center;color:#fff;font-size:1.8rem;font-weight:800;margin-bottom:10px;">
+                    <i class="fas fa-star" style="color:#f0c040;"></i> 
+                    Is Tool Ke <span style="color:#f0c040;">Fayde</span>
+                </h3>
+                <p style="text-align:center;color:#8899bb;margin-bottom:30px;">
+                    Have I Been Pwned — आपकी सुरक्षा के लिए 4 जबरदस्त फायदे
+                </p>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+                        <h4>&#9889; Instant Leak Check</h4>
+                        <p>एक क्लिक में पता चल जाता है कि आपका Email किस-किस कंपनी (जैसे boAt, 1win, Canva, आदि) के Data Breach में शामिल था।</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-list-ul"></i></div>
+                        <h4>&#128203; Exposed Data Details</h4>
+                        <p>यह बताता है कि Leak में आपका क्या-क्या Expose हुआ है — जैसे Name, Email, Phone Number, या Encrypted Passwords.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-lock-open"></i></div>
+                        <h4>&#128274; No Password Needed</h4>
+                        <p>यहां चेक करने के लिए किसी Password की ज़रूरत नहीं, बस अपना Email ID डालना है — 100% सुरक्षित प्रक्रिया।</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-bell"></i></div>
+                        <h4>&#128276; Early Warning System</h4>
+                        <p><strong>"Notify Me"</strong> Feature Enable करके आने वाले किसी भी Data Breach की Alert अपने Email पर पा सकते हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: SAFETY & PREVENTION GUIDE ===== -->
+    <section class="govt-services" style="padding:80px 0;">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-shield-alt"></i> Data Leaks &amp; Scams Se <span class="gold">Kaise Bachein</span>
+            </div>
+            <p class="section-sub">अपने डेटा और पहचान को सुरक्षित रखने के लिए इन आसान उपायों को अपनाएं</p>
+
+            <div class="safety-guide">
+                <div class="guide-title">
+                    <i class="fas fa-list"></i> Safety &amp; Prevention <span class="gold">Guide</span>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>&#128273; Change Compromised Passwords Immediately</h4>
+                        <p>
+                            <i class="fas fa-check-circle"></i> अगर आपका Email किसी Leak में मिलता है, तो उस Website पर इस्तेमाल किया गया Password <strong>तुरंत बदल दें</strong>।<br>
+                            <i class="fas fa-exclamation-triangle" style="color:#f0c040;"></i> कभी भी अपने <strong>Gmail, Social Media, और Net Banking</strong> का Password एक जैसा न रखें।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>&#128274; Enable 2-Factor Authentication (2FA)</h4>
+                        <p>
+                            <i class="fas fa-check-circle"></i> अपने हर महत्वपूर्ण Account (Gmail, WhatsApp, Instagram) पर <strong>2-Step Verification</strong> ज़रूर ON रखें।<br>
+                            <i class="fas fa-info-circle"></i> इससे Password पता होने पर भी कोई बिना OTP के Login नहीं कर पाएगा।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>&#9940; Never Click Unwanted Links / Fake Emails</h4>
+                        <p>
+                            <i class="fas fa-check-circle"></i> Unknown Sender या Romantic/Tempting Scam Emails (जैसे Michelle वाले Messages) के Links पर कभी Click न करें।<br>
+                            <i class="fas fa-exclamation-triangle" style="color:#f0c040;"></i> Unknown Emails पर कभी Reply न करें — Reply करने से Scammers को पता चल जाता है कि आपका Email Active है।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h4>&#128222; Report Spam &amp; Block</h4>
+                        <p>
+                            <i class="fas fa-check-circle"></i> किसी भी Suspicious Email को पढ़ने के बाद Gmail पर <strong>"Report Spam"</strong> करके Block कर दें।<br>
+                            <i class="fas fa-check-circle"></i> इससे आपका Inbox Safe रहेगा और Future में वैसे Emails आप तक नहीं पहुंचेंगे।
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div style="text-align:center;margin-top:40px;">
+                <p style="color:#8899bb;margin-bottom:18px;font-size:1.05rem;">
+                    <i class="fas fa-shield-alt" style="color:#f0c040;"></i> 
+                    अपनी सुरक्षा की जांच करें — आज ही!
+                </p>
+                <a href="https://haveibeenpwned.com/" target="_blank" class="btn-primary" style="display:inline-flex;">
+                    <i class="fas fa-external-link-alt"></i> Check Your Email on Have I Been Pwned
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>Prem <span>Enterprises</span></h2>
+                    <p>&#9889; Smart IT Solutions • Cyber Security • Student Help</p>
+                    <p style="font-size:0.9rem;color:#6678a0;">
+                        <i class="fas fa-map-pin"></i> Near CBI Bank, Block Road, Ramgarhwa<br>
+                        East Champaran, Bihar - 845433
+                    </p>
+                    <p style="font-size:0.9rem;color:#6678a0;">
+                        <i class="fas fa-phone"></i> 7323078109 | 9570349611
+                    </p>
+                    <div class="prem-badge">
+                        <i class="fas fa-crown"></i>
+                        Prem Enterprises Pvt. Ltd.
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="security.html">Security</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> 7323078109</p>
+                    <p><i class="fab fa-whatsapp" style="color:#25D366;"></i> 7323078109</p>
+                    <p><i class="fas fa-envelope"></i> itstherocket83@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ritik-kumar-prem-kumar-542814286/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>
+                    &copy; 2025 <span class="prem-enterprises">Prem Enterprises</span> | All Rights Reserved
+                </p>
+                <p style="font-size:0.85rem;color:#445577;margin-top:5px;">
+                    <i class="fas fa-crown" style="color:#f0c040;"></i>
+                    Designed &amp; Developed with &#10084;&#65039; by <span style="color:#f0c040;font-weight:600;">Prem Enterprises</span>
+                    <i class="fas fa-crown" style="color:#f0c040;"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SEARCH OVERLAY ===== -->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-close" id="searchClose">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="search-input-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search something... कुछ खोजें..." autocomplete="off">
+        </div>
+        <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

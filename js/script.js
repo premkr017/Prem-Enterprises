@@ -95,6 +95,9 @@
         // Blog
         { page: 'Latest Blog', url: 'services.html#latest-blog', keywords: ['blog', 'CM Pratigya', 'RRB ALP', 'SSC GD', 'har ghar tiranga', 'ekalyan', 'PM kisan', 'BPSC teacher'], icon: 'fa-blog' },
 
+        // Security / Cyber Safety
+        { page: 'Cyber Security & Safety', url: 'security.html', keywords: ['security', 'cyber security', 'safety', 'have i been pwned', 'data leak', 'email check', 'password', '2fa', 'two factor', 'scam', 'phishing', 'spam', 'data breach', 'pwned', 'hacking', 'ethical hacking'], icon: 'fa-shield-alt' },
+
         // Tech / Windows & Linux
         { page: 'Windows & Linux Solutions', url: 'services.html#tech', keywords: ['windows', 'linux', 'kali linux', 'ubuntu', 'formatting', 'os installation', 'windows 7', 'windows 10', 'windows 11'], icon: 'fa-windows' },
 
