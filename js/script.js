@@ -81,6 +81,7 @@
 
         // Admission
         { page: 'Admissions', url: 'services.html#admission-fj', keywords: ['admission', 'namankan', 'pravish', 'BCECE', 'BRABU', 'JCECEB', 'PPU', 'Patliputra', 'navodaya', 'JNVST', 'PTET', 'OFSS', 'polytechnic', 'ITI'], icon: 'fa-graduation-cap' },
+        { page: 'Passport', url: 'services.html#govt-services', keywords: ['passport', 'paspot', 'travel', 'international travel', 'visa', 'passport seva', 'passport india', 'services1.passportindia.gov.in'], icon: 'fa-plane' },
         { page: 'KCTC College', url: 'services.html', keywords: ['khemchand tarachand college', 'kctc college', 'raxaul college', 'raxaul'], icon: 'fa-school' },
 
         // University Updates
