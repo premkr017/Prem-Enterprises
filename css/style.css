@@ -517,18 +517,18 @@ header {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
-.social-banner .banner-item.telegram { border-color: rgba(0, 136, 204, 0.3); }
-.social-banner .banner-item.telegram:hover { background: rgba(0, 136, 204, 0.15); }
+.social-banner .banner-item.linkedin { border-color: rgba(10, 102, 194, 0.3); }
+.social-banner .banner-item.linkedin:hover { background: rgba(10, 102, 194, 0.15); }
 .social-banner .banner-item.whatsapp { border-color: rgba(37, 211, 102, 0.3); }
 .social-banner .banner-item.whatsapp:hover { background: rgba(37, 211, 102, 0.15); }
-.social-banner .banner-item.app { border-color: rgba(240, 192, 64, 0.3); }
-.social-banner .banner-item.app:hover { background: rgba(240, 192, 64, 0.15); }
+.social-banner .banner-item.google-review { border-color: rgba(240, 192, 64, 0.3); }
+.social-banner .banner-item.google-review:hover { background: rgba(240, 192, 64, 0.15); }
 .social-banner .banner-item i {
     font-size: 1.6rem;
 }
-.social-banner .banner-item.telegram i { color: #0088cc; }
+.social-banner .banner-item.linkedin i { color: #0a66c2; }
 .social-banner .banner-item.whatsapp i { color: #25D366; }
-.social-banner .banner-item.app i { color: #f0c040; }
+.social-banner .banner-item.google-review i { color: #f0c040; }
 .social-banner .banner-item small {
     display: block;
     font-size: 0.65rem;
